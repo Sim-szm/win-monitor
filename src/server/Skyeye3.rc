@@ -1,0 +1,321 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Skyeye3.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Skyeye3.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SKYEYE3_DIALOG DIALOGEX 0, 0, 646, 411
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "首页",IDC_TITLE,9,18,113,90,BS_BITMAP
+    PUSHBUTTON      "用户",IDC_INFO,132,18,114,90,BS_BITMAP
+    PUSHBUTTON      "系统日志",IDC_SYSDATE,257,18,116,90,BS_BITMAP
+    PUSHBUTTON      "关于我们",IDC_ABOUT_US,513,18,122,90,BS_BITMAP
+    PUSHBUTTON      "x",IDC_CLOSE,618,2,28,15,BS_BITMAP
+    PUSHBUTTON      "_",IDC_MINI,590,2,28,15,BS_BITMAP
+    CONTROL         "Tree1",IDC_INFOTREE,"SysTreeView32",WS_BORDER | 
+                    WS_TABSTOP,7,119,134,254
+    CONTROL         "List1",IDC_PROCLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,159,119,219,255
+    LTEXT           "IP地址",IDC_IPNAME,388,109,28,11
+    EDITTEXT        IDC_IP,388,122,69,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "用户名",IDC_USERNAME,513,109,28,11
+    EDITTEXT        IDC_USER,513,122,69,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "CPU信息",IDC_CPUINFO,388,137,35,11
+    EDITTEXT        IDC_CPU,388,151,113,69,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "操作系统",IDC_SYSINFO,513,137,37,12
+    EDITTEXT        IDC_SYS,513,151,122,69,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "删除",IDC_DELETE,330,385,47,17,BS_BITMAP
+    PUSHBUTTON      "黑名单",IDC_BLACKDATE,383,18,120,90,BS_BITMAP
+    EDITTEXT        IDC_NETWORK,388,231,247,70,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    LTEXT           "网卡信息",IDC_NET,388,220,33,10
+END
+
+IDD_DLOGINDIALOG DIALOG DISCARDABLE  0, 0, 369, 214
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_PASSPORT,152,179,82,13,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_IDNAME,152,163,82,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_LOGIN,142,198,41,13,BS_BITMAP
+    PUSHBUTTON      "退出",IDC_QUIT,197,198,41,13,BS_BITMAP
+END
+
+IDD_HELLOWORLDDIALOG DIALOG DISCARDABLE  0, 0, 226, 145
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+END
+
+IDD_BLACKDATEDIALOG DIALOG DISCARDABLE  0, 0, 207, 219
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "黑名单"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_BLACKLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,14,7,177,185
+    PUSHBUTTON      "增添",IDC_ADDBUTTON,14,201,48,15,BS_BITMAP
+    PUSHBUTTON      "删除",IDC_DELETEBUTTON,79,201,49,15,BS_BITMAP
+    PUSHBUTTON      "确认",IDC_OKBUTTON,147,201,46,15,BS_BITMAP
+END
+
+IDD_ADDDIALOG DIALOG DISCARDABLE  0, 0, 141, 51
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_NEWBLACK,13,14,114,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_OKBUTTON,15,33,46,15
+    PUSHBUTTON      "退出",IDC_CANCELBUTTON,74,33,47,15
+END
+
+IDD_SYSINFODIALOG DIALOG DISCARDABLE  0, 0, 187, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "日志"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_SYSINFOLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,173,179
+    PUSHBUTTON      "确定",IDC_CURTAIN,87,191,44,15,BS_BITMAP
+    PUSHBUTTON      "清空",IDC_DELETEALL,136,191,44,15,BS_BITMAP
+END
+
+IDD_ABOUTUSDIALOG DIALOG DISCARDABLE  0, 0, 207, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于我们"
+FONT 10, "System"
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Skyeye3 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Skyeye3\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Skyeye3.EXE\0"
+            VALUE "ProductName", "Skyeye3 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SKYEYE3_DIALOG, DIALOG
+    BEGIN
+        HORZGUIDE, 129
+    END
+
+    IDD_DLOGINDIALOG, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+    END
+
+    IDD_HELLOWORLDDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_BLACKDATEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_SYSINFODIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_ABOUTUSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGIN        BITMAP  DISCARDABLE     "res\\登陆.bmp"
+IDB_BITMAP_START1       BITMAP  DISCARDABLE     "res\\弹窗.bmp"
+IDB_MAJORBITMAP         BITMAP  DISCARDABLE     "res\\底板1.bmp"
+IDB_TITLEBITMAP         BITMAP  DISCARDABLE     "res\\首页.bmp"
+IDB_INFOBITMAP          BITMAP  DISCARDABLE     "res\\用户.bmp"
+IDB_SYSDATE             BITMAP  DISCARDABLE     "res\\日志.bmp"
+IDB_BLACK               BITMAP  DISCARDABLE     "res\\黑名单.bmp"
+IDB_ABOUT_US            BITMAP  DISCARDABLE     "res\\关于我们.bmp"
+IDB_DELETPROCBITMAP     BITMAP  DISCARDABLE     "res\\123.bmp"
+IDB_CLOSEBITMAP         BITMAP  DISCARDABLE     "res\\关闭按钮.bmp"
+IDB_MINIBITMAP          BITMAP  DISCARDABLE     "res\\最小化按钮.bmp"
+IDB_DELETELIST          BITMAP  DISCARDABLE     "res\\删除按钮.bmp"
+IDB_SURE                BITMAP  DISCARDABLE     "res\\确定按钮.bmp"
+IDB_ADD                 BITMAP  DISCARDABLE     "res\\添加按钮.bmp"
+IDB_BLACKDATE           BITMAP  DISCARDABLE     "res\\黑名单底板.bmp"
+IDB_LOGIN               BITMAP  DISCARDABLE     "res\\登录按钮.bmp"
+IDB_QUIT                BITMAP  DISCARDABLE     "res\\退出按钮.bmp"
+IDB_DELETEALL           BITMAP  DISCARDABLE     "res\\清空按钮.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Skyeye3.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
